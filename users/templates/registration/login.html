@@ -1,0 +1,24 @@
+<style>
+    body {
+        background-color: #F3EBF6;
+    }
+</style>
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+<div class="main" style="text-align:center;">
+    <h2>Log-in</h2>
+    <form method="post">
+        {%csrf_token%}
+        {{form.as_p}}
+        <button type="submit" class="Button">Log-in</button>
+
+    </form>
+
+    <a class="Button" href=""> Create Account</a>
+    <div class="links">
+        <a class= "links" href="{% url 'password_reset' %}">Reset password</a>
+        <a class = "links" href="{% url 'help' %}"> help</a>
+    </div>
+
+</div>

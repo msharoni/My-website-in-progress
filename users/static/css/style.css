@@ -1,0 +1,45 @@
+.Button {
+    width: 200px;
+    display: inline-block;
+    padding: 0.3em 1.2em;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #FFFFFF;
+    background-color: #4eb5f1;
+    text-align: center;
+    transition: all 0.2s;
+    border: none;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.Button:hover {
+    background-color: #4095c6;
+}
+
+@media all and (max-width:2em) {
+    .Button {
+        display: block;
+        margin: 0.2em auto;
+    }
+}
+
+.main {
+    background-color: #FFFFFF;
+    width: 400px;
+    height: 400px;
+    margin: 7em auto;
+    border-radius: 1.5em;
+    padding: 25px;
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+    position: relative;
+}
+.links {
+    color: gray;
+    bottom: 10px;
+    right: 20px;
+}
